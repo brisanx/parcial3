@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 CORS_ORIGIN_ALLOW_ALL=True
 
-
+SECURE_REFERRER_POLICY = "strict-origin-when-cross-origin"
 # Application definition
 
 INSTALLED_APPS = [
