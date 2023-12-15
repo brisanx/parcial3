@@ -29,16 +29,16 @@ import cloudinary
 import cloudinary.uploader
 
 # Conexión a la base de datos MongoDB
-my_client = pymongo.MongoClient('mongodb+srv://usuario:usuario@parcial3.jo5shgi.mongodb.net')
+my_client = pymongo.MongoClient('mongodb+srv://dbUser:1234@albacluster.x5odmcy.mongodb.net/?retryWrites=true&w=majority')
 
 # Nombre de la base de datos
 dbname = my_client['Parcial3']
 
 # Colecciones
-#collection_productos = dbname["productos"]
+
 collection_entidades = dbname["entidad"]
 
-CLIENT_ID = '739979864172-bbrds0insroblueqf3grvncjuj4m3dca.apps.googleusercontent.com'
+CLIENT_ID = '17726361007-7a50i4d5hhjlc2461dv3fnb9ifmhq4di.apps.googleusercontent.com'
 # ----------------------------------------  VISTAS DE LA APLICACIÓN ------------------------------
 
 # ----------------------------------TOKEN -------------------------------
@@ -85,9 +85,9 @@ def upload_image(request):
 
         # Upload each image to Cloudinary
         cloudinary.config(
-                cloud_name="dr4ermv09",
-                api_key="895664941251193",
-                api_secret="JhAWx8Yq6S1YRJsXw2IVFbAl2wk"
+                cloud_name="dkrlpnpyb",
+                api_key="522138764113221",
+                api_secret="DfmjcXO8cYmffAB2qacJ1qeefD8"
             )
 
         for file in uploaded_files:
